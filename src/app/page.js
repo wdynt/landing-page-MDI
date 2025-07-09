@@ -26,6 +26,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -139,13 +140,23 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-navy-600 to-teal-600 rounded-lg flex items-center justify-center">
                   <Heart className="h-5 w-5 text-white" />
                 </div>
                 <span className="text-xl font-bold text-navy-900">
                   HealthTech AI
                 </span>
+              </div> */}
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-navy-400 to-teal-400 rounded-lg flex items-center justify-center">
+                  <img
+                    src="/assets/logo.png"
+                    alt="Logo"
+                    className="h-5 w-5 object-contain"
+                  />
+                </div>
+                <span className="text-xl font-bold">Madanidana</span>
               </div>
             </div>
 
@@ -668,11 +679,23 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-navy-400 to-teal-400 rounded-lg flex items-center justify-center">
                   <Heart className="h-5 w-5 text-white" />
                 </div>
-                <span className="text-xl font-bold">HealthTech AI</span>
+                <span className="text-xl font-bold">Madanidana</span>
+              </div> */}
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-navy-400 to-teal-400 rounded-lg flex items-center justify-center">
+                  <Image
+                    src="/assets/logo.png"
+                    alt="Logo"
+                    width={20}
+                    height={20}
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-xl font-bold">Madanidana</span>
               </div>
               <p className="text-gray-300 leading-relaxed">
                 Mentransformasi kesehatan melalui solusi teknologi cerdas yang
